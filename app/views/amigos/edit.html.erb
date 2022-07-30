@@ -1,0 +1,11 @@
+<h1>Editing amigo</h1>
+
+<%= render "form", amigo: @amigo %>
+
+<br>
+
+<div>
+  <%= button_to "Show this amigo", @amigo, class:"btn btn-outline-secondary" %>
+  <%= button_to "Back to amigos", amigos_path, class:"btn btn-outline-secondary" %>
+  <%= button_to 'Eliminar', @amigo, class: "btn btn-outline-danger", method: :delete %>
+</div>
